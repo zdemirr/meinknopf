@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <button 
+        id = "button"
+        style = "
+            font-size: 40;
+            padding: 50%;"
+        > click me </button>
+    </body>
+
+    <script>
+       button = document.getElementById('button')
+       violet = true 
+
+       button.addEventListener('click', function() {
+            if (violet) {
+                button.style.backgroundColor = 'cyan'
+            } else {
+                button.style.backgroundColor = 'violet'
+            }
+            violet =! violet
+        })
+    </script>
+
+</html>
